@@ -1,11 +1,10 @@
 import "./App.css";
 import Liste from "./Liste";
-import Arama from "./Arama";
 import InputWithLabel from "./InputWithLabel";
 import React from "react";
 function App() {
   const [isLoading, setIsLoading] = React.useState(false);
-  const [isError, setIsError] = React.useState(true);
+  const [isError, setIsError] = React.useState(false);
   const [aramaMetni, setAramaMetni] = React.useState(
     localStorage.getItem("aranan") || "Web"
   );
