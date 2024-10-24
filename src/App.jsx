@@ -73,7 +73,7 @@ function App() {
         id="arama"
         value={aramaMetni}
         onInputChange={handleSearch}
-        label="Arama:"
+        label="Arama"
       />
       <hr />
       {isError ? (

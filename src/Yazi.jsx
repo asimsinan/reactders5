@@ -3,8 +3,8 @@ function Yazi({ yazi, onRemovePost }) {
     onRemovePost(yazi);
   }
   return (
-    <li>
-      <span>{yazi.baslik + ", " + yazi.yazar + ", " + yazi.puan}</span>&nbsp;
+    <li style={{ marginBottom: "5px" }}>
+      <span>{yazi.baslik + ", " + yazi.yazar + ", " + yazi.puan}&nbsp;</span>
       <span>
         <button onClick={handleRemovePost}>Sil</button>
       </span>

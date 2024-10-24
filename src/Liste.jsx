@@ -5,6 +5,7 @@ function Liste({yazilar,onRemovePost}) {
       <ul>
         {yazilar.map(function (yazi) {
           return (
+            
             <Yazi key={yazi.id} yazi={yazi} onRemovePost={onRemovePost}/>
           );
         })}
